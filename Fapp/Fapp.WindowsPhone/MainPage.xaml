@@ -9,6 +9,17 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="90*"/>
+        </Grid.RowDefinitions>
+    	<Button Content="Sign in" HorizontalAlignment="center" Grid.Row="3" VerticalAlignment="center" FontSize="24" Height="70" Width="200"/>
+    	<TextBlock HorizontalAlignment="center" TextWrapping="Wrap" Text="Frigo App" VerticalAlignment="center" FontSize="48"/>
+    	<TextBox HorizontalAlignment="center" Grid.Row="1" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Center" Width="250"/>
+		<TextBox HorizontalAlignment="center" Grid.Row="2" TextWrapping="Wrap" Text="Password" VerticalAlignment="Center" Width="250"/>
+		<Button Content="mode offline" BorderBrush="black" HorizontalAlignment="center" Grid.Row="4" VerticalAlignment="Top" FontSize="18.667"/>
     </Grid>
 </Page>
