@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    DataContext="{Binding Main, Source={StaticResource Locator}}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
@@ -16,7 +17,8 @@
             <RowDefinition Height="80*"/>
             <RowDefinition Height="90*"/>
         </Grid.RowDefinitions>
-    	<Button x:Uid="Sign in" Content="" HorizontalAlignment="center" Grid.Row="3" VerticalAlignment="center" FontSize="24" Height="70" Width="200"/>
+    	<Button x:Uid="Sign in" Content="" HorizontalAlignment="center" Grid.Row="3" VerticalAlignment="center" FontSize="24" Height="70" Width="200"
+                Command="{Binding Main.Connexion, Source={StaticResource Locator}}"/>
     	<TextBlock HorizontalAlignment="center" TextWrapping="Wrap" Text="Frigo App" VerticalAlignment="center" FontSize="48"/>
         <TextBox x:Uid="Email" HorizontalAlignment="center" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="250"/>
         <TextBox x:Uid="Password" HorizontalAlignment="center" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="250"/>

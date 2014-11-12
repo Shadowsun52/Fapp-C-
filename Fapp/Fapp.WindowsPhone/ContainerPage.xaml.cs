@@ -20,9 +20,9 @@ namespace Fapp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class container : Page
+    public sealed partial class ContainerPage : Page
     {
-        public container()
+        public ContainerPage()
         {
             this.InitializeComponent();
         }

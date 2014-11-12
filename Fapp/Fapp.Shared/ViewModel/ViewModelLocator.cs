@@ -14,6 +14,7 @@
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
+using GalaSoft.MvvmLight.Views;
 using Microsoft.Practices.ServiceLocation;
 
 namespace Fapp.ViewModel
@@ -41,7 +42,11 @@ namespace Fapp.ViewModel
             ////    // Create run time view services and models
             ////    SimpleIoc.Default.Register<IDataService, DataService>();
             ////}
+            NavigationService navigation = new NavigationService();
+            navigation.Configure("home", typeof(Home));
+            navigation.Configure("container", typeof(ContainerPage));
 
+            SimpleIoc.Default.Register<INavigationService>(() => navigation);
             SimpleIoc.Default.Register<MainViewModel>();
         }
 
