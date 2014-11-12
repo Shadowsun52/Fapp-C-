@@ -1,4 +1,7 @@
 using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Views;
+using System.Windows.Input;
 
 namespace Fapp.ViewModel
 {
@@ -16,11 +19,12 @@ namespace Fapp.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
-        /// <summary>
-        /// Initializes a new instance of the MainViewModel class.
-        /// </summary>
-        public MainViewModel()
+
+        public INavigationService _navigationService;
+
+        public MainViewModel(INavigationService navigationService=null)
         {
+            _navigationService = navigationService;
             ////if (IsInDesignMode)
             ////{
             ////    // Code runs in Blend --> create design time data.
@@ -29,6 +33,18 @@ namespace Fapp.ViewModel
             ////{
             ////    // Code runs "for real"
             ////}
+        }
+
+        public ICommand Connexion
+        {
+            get
+            {
+                return new RelayCommand(
+                    () => {
+                        _navigationService.NavigateTo("home");
+                    },
+                    null);
+            }
         }
     }
 }
