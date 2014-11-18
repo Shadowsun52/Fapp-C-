@@ -13,14 +13,14 @@
             <RowDefinition Height="100*"/>
 			<RowDefinition Height="310*"/>
         </Grid.RowDefinitions>
-    	<TextBlock HorizontalAlignment="center" TextWrapping="Wrap" Text="Frigo App" VerticalAlignment="center" FontSize="48"/>
-    	<Grid HorizontalAlignment="Left" Height="290" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="380">
+    	<TextBlock HorizontalAlignment="center" TextWrapping="Wrap" Text="Frigo App" Grid.Row="0" VerticalAlignment="center" FontSize="48"/>
+    	<Grid HorizontalAlignment="Left" Height="464" Margin="10,10.167,0,0" Grid.Row="1" VerticalAlignment="Top" Width="380">
 			<Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-			<RowDefinition Height="50*"/>
-        </Grid.RowDefinitions>
-    		<Button Content="Add Container" HorizontalAlignment="center" VerticalAlignment="center" FontSize="24" Height="70" Width="200" Margin="91,170,89,50"/>
-    		<ListView HorizontalAlignment="Left" Margin="91,28,0,135" Width="200"/>
+				<RowDefinition Height="auto"/>
+				<RowDefinition Height="50*"/>
+			</Grid.RowDefinitions>
+			<ListView HorizontalAlignment="Left" Margin="91,28,0,135" Grid.Row="0" Width="200"/>
+    		<Button Content="Add Container" HorizontalAlignment="center" Grid.Row="1" VerticalAlignment="center" FontSize="24" Height="70" Width="200" Margin="91,141.667,89,89.167"/>
     	</Grid>
     </Grid>
 </Page>

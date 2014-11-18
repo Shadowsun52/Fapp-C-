@@ -9,6 +9,15 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="80*"/>
+        </Grid.RowDefinitions>
+    	<TextBlock HorizontalAlignment="center" TextWrapping="Wrap" Text="Frigo App" Grid.Row="0" VerticalAlignment="center" FontSize="48"/>
+		<TextBlock HorizontalAlignment="center" TextWrapping="Wrap" Text="NameOfContainer" Grid.Row="1" VerticalAlignment="center" FontSize="48"/>
 
+        
     </Grid>
 </Page>
