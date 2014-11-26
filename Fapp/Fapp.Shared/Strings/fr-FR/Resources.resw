@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddContainerBtn.Content" xml:space="preserve">
+    <value>Ajouter un nouveau frigo</value>
+  </data>
+  <data name="AddItem.Content" xml:space="preserve">
+    <value>Ajouter un nouvel aliment</value>
+  </data>
   <data name="Email.Text" xml:space="preserve">
     <value>E-mail</value>
   </data>

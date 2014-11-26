@@ -20,7 +20,7 @@
 				<RowDefinition Height="50*"/>
 			</Grid.RowDefinitions>
 			<ListView HorizontalAlignment="Left" Margin="91,28,0,135" Grid.Row="0" Width="200"/>
-    		<Button Content="Add Container" HorizontalAlignment="center" Grid.Row="1" VerticalAlignment="center" FontSize="24" Height="70" Width="200" Margin="91,141.667,89,89.167"/>
+    		<Button Content="" x:Uid="AddContainerBtn" HorizontalAlignment="center" Grid.Row="1" VerticalAlignment="center" FontSize="24" Height="70" Width="200" Margin="91,141.667,89,89.167"/>
     	</Grid>
     </Grid>
 </Page>
