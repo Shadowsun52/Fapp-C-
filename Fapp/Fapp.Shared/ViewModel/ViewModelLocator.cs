@@ -43,7 +43,7 @@ namespace Fapp.ViewModel
             ////    SimpleIoc.Default.Register<IDataService, DataService>();
             ////}
             NavigationService navigation = new NavigationService();
-            navigation.Configure("home", typeof(Home));
+            navigation.Configure("home", typeof(HomePage));
             navigation.Configure("container", typeof(ContainerPage));
 
             SimpleIoc.Default.Register<INavigationService>(() => navigation);
