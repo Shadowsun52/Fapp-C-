@@ -34,6 +34,7 @@ namespace Fapp
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Fapp.Model
 {
-    public class item
+    public class Item
     {
         public int id { get; set; }
         public string label { get; set; }
@@ -18,3 +18,8 @@ namespace Fapp.Model
         }
     }
 }
+
+
+
+        
+    
