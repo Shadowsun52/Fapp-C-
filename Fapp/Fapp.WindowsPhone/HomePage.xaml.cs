@@ -20,9 +20,9 @@ namespace Fapp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Home : Page
+    public sealed partial class HomePage : Page
     {
-        public Home()
+        public HomePage()
         {
             this.InitializeComponent();
         }
@@ -34,7 +34,6 @@ namespace Fapp
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            
         }
     }
 }
