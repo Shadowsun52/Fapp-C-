@@ -6,21 +6,24 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    DataContext="{Binding Source={StaticResource Locator}, Path=Home}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="100*"/>
-            <RowDefinition Height="310*"/>
-        </Grid.RowDefinitions>
-        <TextBlock HorizontalAlignment="center" TextWrapping="Wrap" Text="Frigo App" Grid.Row="0" VerticalAlignment="center" FontSize="48"/>
-        <Grid HorizontalAlignment="Left" Height="464" Margin="10,10.167,0,0" Grid.Row="1" VerticalAlignment="Top" Width="380">
+    <ScrollViewer>
+        <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="50*"/>
+                <RowDefinition Height="100*"/>
+                <RowDefinition Height="310*"/>
             </Grid.RowDefinitions>
-            <ListView HorizontalAlignment="Left" Margin="91,28,0,135" Grid.Row="0" Width="200"/>
-            <Button Content="" x:Uid="AddContainerBtn" HorizontalAlignment="center" Grid.Row="1" VerticalAlignment="center" FontSize="24" Height="70" Width="200" Margin="91,141.667,89,89.167"/>
+            <TextBlock HorizontalAlignment="center" TextWrapping="Wrap" Text="Frigo App" Grid.Row="0" VerticalAlignment="center" FontSize="48"/>
+            <Grid HorizontalAlignment="Left" Height="464" Margin="10,10.167,0,0" Grid.Row="1" VerticalAlignment="Top" Width="380">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="50*"/>
+                </Grid.RowDefinitions>
+                <ListView ItemsSource="{Binding Containers}" HorizontalAlignment="Left" Margin="91,28,0,135" Grid.Row="0" Width="200"/>
+                <Button Content="" x:Uid="AddContainerBtn" HorizontalAlignment="center" Grid.Row="1" VerticalAlignment="center" FontSize="24" Height="70" Width="200" Margin="91,141.667,89,89.167"/>
+            </Grid>
         </Grid>
-    </Grid>
+    </ScrollViewer>
 </Page>

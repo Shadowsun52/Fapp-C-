@@ -16,6 +16,8 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Model\Container.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\FakeListContainerService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\IListContainerService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Item.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\User.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HomePageViewModel.cs" />

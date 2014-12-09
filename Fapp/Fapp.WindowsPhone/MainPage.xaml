@@ -9,19 +9,21 @@
     DataContext="{Binding Main, Source={StaticResource Locator}}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="100*"/>
-            <RowDefinition Height="70*"/>
-            <RowDefinition Height="70*"/>
-            <RowDefinition Height="80*"/>
-            <RowDefinition Height="90*"/>
-        </Grid.RowDefinitions>
-    	<Button x:Uid="Sign in" Content="" HorizontalAlignment="center" Grid.Row="3" VerticalAlignment="center" FontSize="24" Height="70" Width="200"
-                Command="{Binding Main.Connexion, Source={StaticResource Locator}}"/>
-    	<TextBlock HorizontalAlignment="center" TextWrapping="Wrap" Text="Frigo App" VerticalAlignment="center" FontSize="48"/>
-        <TextBox x:Uid="Email" HorizontalAlignment="center" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="250"/>
-        <TextBox x:Uid="Password" HorizontalAlignment="center" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="250"/>
-        <Button x:Uid="ModeOffline" Content="" BorderBrush="black" HorizontalAlignment="center" Grid.Row="4" VerticalAlignment="Top" FontSize="18.667"/>
-    </Grid>
+    <ScrollViewer>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100*"/>
+                <RowDefinition Height="70*"/>
+                <RowDefinition Height="70*"/>
+                <RowDefinition Height="80*"/>
+                <RowDefinition Height="90*"/>
+            </Grid.RowDefinitions>
+            <Button x:Uid="Sign in" Content="" HorizontalAlignment="center" Grid.Row="3" VerticalAlignment="center" FontSize="24" Height="70" Width="200"
+                        Command="{Binding Main.Connexion, Source={StaticResource Locator}}"/>
+            <TextBlock HorizontalAlignment="center" TextWrapping="Wrap" Text="Frigo App" VerticalAlignment="center" FontSize="48"/>
+            <TextBox x:Uid="Email" HorizontalAlignment="center" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="250"/>
+            <TextBox x:Uid="Password" HorizontalAlignment="center" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="250"/>
+            <Button x:Uid="ModeOffline" Command="{Binding Home, Source={StaticResource Locator}}" Content="" BorderBrush="black" HorizontalAlignment="center" Grid.Row="4" VerticalAlignment="Top" FontSize="18.667"/>
+        </Grid>
+    </ScrollViewer>
 </Page>

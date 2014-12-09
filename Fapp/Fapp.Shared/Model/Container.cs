@@ -13,6 +13,9 @@ namespace Fapp.Model
         //envoyées et parce qu'il y a peu de type (frigo et congel)
         public int type { get; set; }
 
+        public Container()
+        {}
+
         public override string ToString()
         {
             return this.name;

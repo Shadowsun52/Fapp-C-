@@ -8,21 +8,22 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="100*"/>
-            <RowDefinition Height="310*"/>
-        </Grid.RowDefinitions>
-    	<TextBlock HorizontalAlignment="center" TextWrapping="Wrap" Text="Frigo App" Grid.Row="0" VerticalAlignment="center" FontSize="48"/>
-		<Grid Grid.Row="1">
-			<Grid.RowDefinitions>
-				<RowDefinition Height="auto"/>
-				<RowDefinition Height="auto"/>
-				<RowDefinition Height="80"/>
-			</Grid.RowDefinitions>
-		<TextBlock HorizontalAlignment="center" TextWrapping="Wrap" Text="NameOfContainer" Grid.Row="0" VerticalAlignment="center" FontSize="28"/>
-		<Button x:Uid="AddItem" Content="" HorizontalAlignment="Left" Margin="108,219.833,0,-196.833" Grid.Row="2" VerticalAlignment="Top" Width="175"/>
-
+    <ScrollViewer>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100*"/>
+                <RowDefinition Height="310*"/>
+            </Grid.RowDefinitions>
+        	<TextBlock HorizontalAlignment="center" TextWrapping="Wrap" Text="Frigo App" Grid.Row="0" VerticalAlignment="center" FontSize="48"/>
+		    <Grid Grid.Row="1">
+    			<Grid.RowDefinitions>
+	    			<RowDefinition Height="auto"/>
+		    		<RowDefinition Height="auto"/>
+			    	<RowDefinition Height="80"/>
+    			</Grid.RowDefinitions>
+	    	<TextBlock HorizontalAlignment="center" TextWrapping="Wrap" Text="NameOfContainer" Grid.Row="0" VerticalAlignment="center" FontSize="28"/>
+		    <Button x:Uid="AddItem" Content="" HorizontalAlignment="Left" Margin="108,219.833,0,-196.833" Grid.Row="2" VerticalAlignment="Top" Width="175"/>
+            </Grid>
         </Grid>
-    </Grid>
+    </ScrollViewer>
 </Page>

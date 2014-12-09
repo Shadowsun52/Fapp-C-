@@ -24,7 +24,7 @@ namespace Fapp.ViewModel
 
         public MainViewModel(INavigationService navigationService=null)
         {
-            _navigationService = navigationService;
+            //_navigationService = navigationService;
             ////if (IsInDesignMode)
             ////{
             ////    // Code runs in Blend --> create design time data.

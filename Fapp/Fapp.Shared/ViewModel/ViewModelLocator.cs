@@ -48,6 +48,7 @@ namespace Fapp.ViewModel
 
             SimpleIoc.Default.Register<INavigationService>(() => navigation);
             SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<HomePageViewModel>();
         }
 
         public MainViewModel Main
@@ -57,7 +58,15 @@ namespace Fapp.ViewModel
                 return ServiceLocator.Current.GetInstance<MainViewModel>();
             }
         }
-        
+
+        public HomePageViewModel Home
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<HomePageViewModel>();
+            }
+        }
+
         public static void Cleanup()
         {
             // TODO Clear the ViewModels
